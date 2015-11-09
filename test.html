@@ -1,0 +1,186 @@
+  <!DOCTYPE html>
+
+  <html>
+  	<head>
+
+  		<title>My First Bootstrap Website</title>
+  		<meta name="description" content="">
+
+
+  		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  		<link href="css/test.css" rel="stylesheet">
+
+  		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+  	</head>
+  	<body>
+      <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-xs-12 col-md-3">.col-xs-6 .col-sm-3
+Resize your viewport or check it out on your phone for an example.</div>
+    <div class="col-xs-6 col-md-3">.col-xs-6 .col-md-4</div>
+     <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-md-3"><h1>Bootstrap heading <small>A subheading</small></h1></div>
+        <div class="col-xs-6 col-md-3"><p class="lead">hey how <del>deleter</del> <em>are</em> <mark>you </mark>doing.</p></div>
+  </div>
+  <div class="row">
+  <div class="col-xs-6 col-md-5 col-md-offset-1">
+    level 1
+    <div class="row">
+      <div class="col-md-7 col-md-push-5">level 2_1</div>
+      <div class="col-md-5 col-md-pull-7">level 2_2</div>
+      <!-- col-md-push-5 col-md-pull-7 -->
+    </div>
+  </div>
+    <div class="col-xs-6 col-md-6"><pre><code><dl class="dl-horizontal">
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem <kbd>malesuada</kbd> magna mollis euismod.</dd>
+      <dt>Etiam porta sem malesuada magna mollis</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl></code></pre></div>
+</div>
+
+  <div class="row">
+    <div class="col-md-6 col-md-push-6">
+      <!-- <dl class="dl-horizontal">
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        <dt>Etiam porta sem malesuada magna mollis</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      </dl> -->
+      <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <tr class="active">
+          <th>huh</th>
+          <th>huh</th>
+        </tr>
+          <tr class="success">
+            <td>Hey</td>
+            <td>Hey</td>
+          </tr>
+          <tr class="info">
+            <td>Hello</td>
+            <td>Hello</td>
+          </tr>
+          <tr class="warning">
+            <td>Hello</td>
+            <td>Hello</td>
+          </tr>
+          <tr class="danger">
+            <td>Hello</td>
+            <td>Hello</td>
+          </tr>
+      </table>
+      </div>
+      <abbr title="attribute" class="initialism">attr</abbr> hey how r u?
+      <p>Hey</p>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-12">
+    <form action="" class="form-horizontal">
+      <div class="form-group">
+        <label for="myformemail">Email:</label>
+        <input type="email" id="myformemail" class="form-control" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="myformpassword">Password:</label>
+        <input type="password" id="myformpassword" class="form-control" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="myformfile">Choose File</label>
+        <input type="file" id="myformfile">
+      </div>
+      <div class="checkbox">
+        <label class="checkbox-inline">
+        <input type="checkbox" id="myformcheckbox"> Check me out
+        </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" id="myformcheckbox"> Check me out
+        </label>
+      </div>
+      <div class="checkbox disabled">
+        <label>
+        <input type="checkbox" id="myformcheckbox" disabled> I accept terms and conditions.
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Another Form  -->
+  <div class="row">
+    <div class="col-12">
+      <form action="" class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="transfer">Anount (in dollors)</label>
+          <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" id="transfer" class="form-control" placeholder="Amount">
+          <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+        <button type="Submit" class="btn btn-default">Transfer Now</button>
+      </form>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-12">
+        <select multiple  class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+        <option>Enabled select</option>
+        </select>
+        <hr>
+        <a class="btn btn-info" href="#">Link</a>
+        <button class="btn btn-default" type="submit">Button</button>
+        <input class="btn btn-default" type="button" value="Input" />
+        <input class="btn btn-default" type="submit" value="Submit" />
+        <hr>
+        <p class="bs-example" data-example-id="disabled-button-btns">
+    <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+  </p>
+        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+        <span class="caret"></span>
+        <hr>
+        <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+        <hr>
+        <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+      </div>
+    </div>
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <!-- <div class="row">
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  </div>
+
+  Columns are always 50% wide, on mobile and desktop
+  <div class="row">
+    <div class="col-xs-6">.col-xs-6</div>
+    <div class="col-xs-6">.col-xs-6</div>
+  </div> -->
+  </div>
+    </body>
+    </html>

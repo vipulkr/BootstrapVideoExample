@@ -1,0 +1,15 @@
+
+# all debian archives work of our apt-cacher-ng server
+deb http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty main universe multiverse
+deb-src http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty main universe multiverse
+
+deb http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty-updates main
+deb-src http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty-updates main
+
+deb http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+deb-src http://172.23.238.13:3142/archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+
+deb http://172.23.238.13:3142/security.ubuntu.com/ubuntu trusty-security main
+deb-src http://172.23.238.13:3142/security.ubuntu.com/ubuntu trusty-security main
+deb http://172.23.238.13:3142/security.ubuntu.com/ubuntu trusty-security universe
+deb-src http://172.23.238.13:3142/security.ubuntu.com/ubuntu trusty-security universe
